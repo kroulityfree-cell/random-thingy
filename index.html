@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Voyager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui-layer">
+            <div id="hud">
+                <div class="hud-item">SCORE: <span id="score-val">0</span></div>
+                <div class="hud-item">HP: <span id="hp-val">100</span>/<span id="max-hp-val">100</span></div>
+                <div id="active-buffs"></div>
+            </div>
+            
+            <div id="start-screen" class="overlay">
+                <h1>COSMIC VOYAGER</h1>
+                <p>Use <b>Arrow Keys</b> or <b>WASD</b> to move.<br>Press <b>Spacebar</b> to shoot.</p>
+                <button id="start-btn">LAUNCH MISSION</button>
+            </div>
+
+            <div id="game-over-screen" class="overlay hidden">
+                <h1>MISSION FAILED</h1>
+                <p>Your final score: <span id="final-score">0</span></p>
+                <button id="restart-btn">TRY AGAIN</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
